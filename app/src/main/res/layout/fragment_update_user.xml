@@ -1,0 +1,144 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+
+            android:scaleType="centerCrop"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <EditText
+            android:id="@+id/edt_firstname"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:hint="Họ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_lastname"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/edt_firstname"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:hint="Tên"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_sex"
+            android:text="Giới tính: "
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/img_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rd_group_sex"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/txt_sex"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/img_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rd_male"
+                android:text="Nam"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_marginLeft="16dp"
+                android:id="@+id/rd_female"
+                android:text="Nữ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/txt_title_sdt"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:layout_below="@id/rd_group_sex"
+            android:text="Số điện thoại:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+         <EditText
+             android:layout_marginLeft="8dp"
+             android:layout_toRightOf="@id/txt_title_sdt"
+             android:layout_below="@id/rd_group_sex"
+             android:layout_marginTop="16dp"
+             android:id="@+id/edt_phonenumber"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/edt_phonenumber"
+            android:id="@+id/txt_title_birthday"
+            android:hint="Ngày sinh:"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_below="@+id/edt_phonenumber"
+            android:layout_toRightOf="@id/txt_title_birthday"
+            android:id="@+id/txt_birthday"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:hint="Giới thiệu bản thân"
+            android:layout_below="@+id/txt_birthday"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="64dp"
+            android:background="@drawable/background_button"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/edt_description"
+            android:id="@+id/btn_update"
+            android:text="Cập nhật"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/background_button"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/edt_description"
+            android:id="@+id/btn_cancel"
+            android:text="hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

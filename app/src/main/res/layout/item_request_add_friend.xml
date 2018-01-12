@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:layout_margin="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/chat"
+        android:id="@+id/item_avatar_request"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+    <TextView
+        android:id="@+id/txt_content_request"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="#3b6893"
+        android:gravity="center_vertical"
+        android:text="Hai gửi lời mời kết bạn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

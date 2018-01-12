@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nv_message"
+        android:icon="@drawable/ic_message"
+        android:title="@string/tab_message" />
+
+    <item
+        android:id="@+id/nv_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/tab_friend" />
+
+    <item
+        android:id="@+id/nv_community"
+        android:icon="@drawable/ic_community"
+        android:title="@string/tab_room" />
+
+    <item
+        android:id="@+id/nv_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/tab_more" />
+
+</menu>

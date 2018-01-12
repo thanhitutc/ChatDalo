@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:paddingTop="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_avatar_contact"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/chat"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txt_real_name"
+        android:paddingTop="8dp"
+        android:layout_toRightOf="@+id/img_avatar_contact"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:text="Nguyễn Văn Thành"
+        android:textSize="18sp"
+        android:textColor="#171616"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/txt_real_name"
+        android:id="@+id/txt_username"
+        android:paddingTop="4dp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/img_avatar_contact"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:text="thanhclub"
+        android:textColor="#727272"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

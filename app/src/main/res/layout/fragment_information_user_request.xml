@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background1">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar_info"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/chat"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/txt_username_info"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:layout_toRightOf="@+id/img_avatar_info"
+            android:textColor="#ffffff"
+            android:text="ThanhClub"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="96dp"
+        android:id="@+id/btn_add_friend"
+        android:layout_below="@id/layout_header"
+        android:textColor="#ffffff"
+        android:background="@drawable/background_button"
+        android:text="Xác nhận"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp" />
+
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="96dp"
+        android:id="@+id/btn_cancel_request"
+        android:layout_below="@id/layout_header"
+        android:textColor="#ffffff"
+        android:background="@drawable/background_button"
+        android:text="Huỷ"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_real_name"
+        android:textSize="24sp"
+        android:text="Họ tên: "
+        android:layout_below="@id/btn_add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_sex"
+        android:textSize="24sp"
+        android:text="Giới tính: "
+        android:layout_below="@id/txt_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_phone_number"
+        android:textSize="24sp"
+        android:text="Số điện thoại: "
+        android:layout_below="@id/txt_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DaloChat</string>
+    <string name="tab_message">Message</string>
+    <string name="tab_friend">Friends</string>
+    <string name="tab_room">Community</string>
+    <string name="tab_more">More</string>
+    <string name="title_activity_body">BodyActivity</string>
+
+</resources>
